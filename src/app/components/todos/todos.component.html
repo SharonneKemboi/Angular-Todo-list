@@ -1,5 +1,13 @@
 <div class="mytodos">
-   
+   <form>
+       <input 
+       type="text"
+       name="inputTodo"
+       placeholder="Enter You Todo.."
+       class="todo-input"
+       [(ngModel)]="inputTodo"><!--two way binding-->
+       
+   </form>
     <div *ngFor="let todo of todos; let i = index;"
      class="todo {{ (todo.completed ? 'done': '') }}">
         <div class="id">{{ i }}</div>
