@@ -30,4 +30,8 @@ toggleDone (id: number) {
     return v;
   })
 }
+
+ deleteTodo (id: number) {
+   this.todos = this.todos.filter ((v, i) => i !== id);
+ }
 }
