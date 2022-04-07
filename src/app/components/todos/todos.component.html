@@ -1,4 +1,6 @@
-<div class="mytodos">
+<div class="jumbotron-fluid">
+<div class="todos">
+  
    <form (submit)="addTodo()">
        <input 
        type="text"
@@ -14,4 +16,5 @@
         <div class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
         <button class="delete" (click)="deleteTodo(i)">Remove</button>
     </div>
+</div>
 </div>

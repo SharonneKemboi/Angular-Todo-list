@@ -41,6 +41,8 @@ toggleDone (id: number) {
    this.todos.push({
      content: this.inputTodo,
      completed:false
-   })
+   });
+
+   this.inputTodo = "";
  }
 }
